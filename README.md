@@ -276,7 +276,3 @@ CALINK cycles through three views automatically on each refresh:
 ## License
 
 MIT — free to use, modify, and share.
-
----
-
-*Built for Hack Club High Seas*
