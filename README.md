@@ -35,11 +35,7 @@ The idea came from wanting something simple on my wall — not a screen that glo
 
 ### The Display — Waveshare 7.5" e-Paper (800×480, B/W)
 
-<!---------------------------------------------------------------------------->
-<!-- TODO PHOTO: display.jpg                                                  -->
-<!-- Close-up flat lay of the raw e-ink panel on a white surface.            -->
-<!-- Show the ribbon cable and ZIF connector end clearly.                    -->
-<!---------------------------------------------------------------------------->
+<img width="431" height="353" alt="image" src="https://github.com/user-attachments/assets/052fd2c4-ca41-4cf7-a37e-5ef4aa8200c5" />
 
 I chose the **Waveshare 7.5 inch raw B/W e-ink panel** for a few reasons. At 800×480 pixels it is big enough to show a full week view with readable text, but not so large that it dominates a wall. I went with black and white only — not the red/yellow color version — because the B/W panel refreshes much faster and has better contrast for text. Color e-ink panels can take 30+ seconds to refresh, which felt too slow even for a calendar.
 
@@ -56,11 +52,7 @@ The "raw panel" version has no driver board built in, just the display glass and
 
 ### The Brains — Waveshare Universal e-Paper Driver Board (ESP32)
 
-<!---------------------------------------------------------------------------->
-<!-- TODO PHOTO: driver_board.jpg                                             -->
-<!-- Flat lay of the ESP32 driver board showing the ZIF connector,           -->
-<!-- ESP32 chip, and WiFi antenna. Show both sides if interesting.           -->
-<!---------------------------------------------------------------------------->
+<img width="381" height="316" alt="image" src="https://github.com/user-attachments/assets/b87a273d-5673-4f94-8196-383726db96b4" />
 
 The **Waveshare Universal e-Paper Driver Board** is the core of CALINK. It does three jobs at once: it drives the e-ink display via a built-in ZIF/FPC latch connector, it runs the ESP32 microcontroller that handles all the code, and it provides WiFi for calendar and weather sync. Connecting the display is as simple as flipping the latch, sliding the ribbon cable in, and pressing the latch back down — no soldering required for the display connection at all.
 
@@ -77,11 +69,9 @@ I chose this board over wiring up a bare ESP32 because it eliminates a huge amou
 
 ### Power — LiPo Battery + TP4056 Charger
 
-<!---------------------------------------------------------------------------->
-<!-- TODO PHOTO: power.jpg                                                    -->
-<!-- LiPo battery and TP4056 module side by side, flat lay.                  -->
-<!-- Show JST connector on battery and USB-C port on TP4056.                 -->
-<!---------------------------------------------------------------------------->
+<img width="1090" height="757" alt="image" src="https://github.com/user-attachments/assets/0a21bb1e-35bc-46fb-9c36-49e570668dbc" />
+
+<img width="461" height="407" alt="image" src="https://github.com/user-attachments/assets/ff0bb392-3910-409a-8488-106ebb381610" />
 
 For power I used a **1100mAh LiPo battery** paired with a **TP4056 USB-C charging module**. The ESP32 deep sleep mode draws almost no power between refreshes, so a 1100mAh cell lasts for weeks at a 1-hour refresh interval.
 
