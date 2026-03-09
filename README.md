@@ -265,11 +265,11 @@ CALINK cycles through three views automatically on each refresh:
 
 | Part | Distributor | Qty |
 |---|---|---|
-| [Waveshare 7.5" e-Paper 800x480 B/W raw panel](https://www.waveshare.com/product/7.5inch-e-paper.htm) | Waveshare / Amazon | 1 |
-| Waveshare Universal e-Paper Driver Board (ESP32) | Waveshare / Amazon | 1 |
-| MakerFocus 1100mAh LiPo JST 1.25 (4-pack) | Amazon | 1 pack |
-| TP4056 USB-C LiPo Charger Module | Amazon | 1 |
-| SPDT Toggle Switch | Amazon / Digikey | 1 |
+| [Waveshare 7.5" e-Paper 800x480 B/W raw panel](https://www.waveshare.com/product/7.5inch-e-paper.htm) | Waveshare | 1 |
+| [Waveshare Universal e-Paper Driver Board (ESP32)](https://www.waveshare.com/e-paper-esp32-driver-board.htm) | Waveshare | 1 |
+| [MakerFocus 1100mAh LiPo JST 1.25 (4-pack)](https://www.amazon.com/1100mAh-Rechargable-Protection-Insulated-Development/dp/B0DTDKDV9R/ref=sr_1_7?crid=2CDPEGES54AYX&dib=eyJ2IjoiMSJ9.FgUL2htFijxQ2mRvqawQwpxTj19t8PW-E4NTwrSfj3O__bwSUl6bmtguj_iVoFJ8CcxhgVBB5eZPs34WX1CUQ9oC6DD04qBzGDHHYrxnFciFCmVuhTHvipk0Fay1N_RrjeJhH46dY2fe5HHF2V7bFO2P2Tudd8ZriJyAl3Ucq-p0fkYod3b-3mnUXwwjK2QyVX5tRSVSwieL7J9DVETIj6qrhSI-tJVlaavWj0YfTytdV5ek_qKkPOoJcXd9D6k_h9wKfvamGyRAFxBvPtjEvgJT8qs4LjbnZDZh2lm_Sno.2LEH_G0k1ASP1Jco5DPs62yTYrWrHGfmpBmDMUad0Ew&dib_tag=se&keywords=4%2Bpack%2B3.7v%2B1100mah%2Blipo%2Bbattery&qid=1773009924&sprefix=%2Caps%2C563&sr=8-7&th=1) | Amazon | 1 pack |
+| [TP4056 USB-C LiPo Charger Module](https://www.amazon.com/ALAMSCN-Lithium-Charging-Protection-Functions/dp/B08F7QSLN7/ref=sr_1_3?crid=3NIXU2X0NVTI3&dib=eyJ2IjoiMSJ9.Lg1sGxKZS1Epyw3NMy0efYyFr9RKYdivjOlYHt3nZHMAS5UqnO4Z2AvsO37kOyy6ePbO4AxLTy4wdA4igNSo44OFuF62FASVIV9qMlM4Hcq5JjzwKB1uhkQiji4-UylWu51hU8qFHp40pe2ru9lZh4YkCGfHUkmdMo-9q-L1ISlmP1Gcbmpm4nOMwmlEk2NQAqoRE2qOhflx7Ir2adYqhZCiKBNjwYGTPt146j3j9MA.gMoufhmWo96xIqEWqxB-TSMuus7UwGtZF6OXrnP4lyA&dib_tag=se&keywords=ALAMSCN+TP4056+Type-C+Charger&qid=1772997486&sprefix=alamscn+tp4056+type-c+charger%2Caps%2C142&sr=8-3) | Amazon | 1 |
+| [SPDT Toggle Switch](https://www.amazon.com/Mini-Micro-Slide-Switch-Breadboard/dp/B0DN69L9SG/ref=sr_1_3?crid=7IVKICQ4B00L&dib=eyJ2IjoiMSJ9.Aq11w6rHf74gIfyFiQM7JuQl5Zz0C4IjKR3X09-iRlz7kf1EOKAUB8Nqu0pHbKGnT6ZmIJLEUETSBr9nFLHxbyoR2JUnzKayTyazMl1kZ1uJPq_6LQwZ--ypQOq0iIqFaboJxkw6aW2JoQTcMZPjg214hCHM3AJ3u_IxhPrlDsyp-NVi9t9yOT5OpYZ7VQXEKNRBhcCn1szhqT5gi9UYty-n_QPmdE4HFvzYsclF2R4.6RNtE9sR8jeNjgh25pBsp7BJeB82qhdi4WJ8DWzGet4&dib_tag=se&keywords=on%2Boff%2Bslide%2Bswitch&qid=1773090265&sprefix=on%2Boff%2Bslideswitch%2Caps%2C140&sr=8-3&th=1) | Amazon | 1 |
 
 ---
 
