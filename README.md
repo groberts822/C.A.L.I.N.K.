@@ -4,11 +4,10 @@
 > A low-power e-ink wall calendar that keeps your schedule visible all day — glanceable, distraction-free, and always up to date.
 
 <!---------------------------------------------------------------------------->
-<!-- HERO IMAGE: Photo of the finished CALINK mounted on your wall, display  -->
-<!-- showing a full week view with events, weather, and daily quote.          -->
-<!-- Suggested: natural lighting, clean background, slightly angled shot.     -->
+<!-- TODO PHOTO: hero.jpg                                                     -->
+<!-- Finished CALINK mounted on your wall, display showing week view.        -->
+<!-- Natural lighting, clean background, slightly angled shot.               -->
 <!---------------------------------------------------------------------------->
-![CALINK Mounted on Wall](docs/images/hero.jpg)
 
 ---
 
@@ -37,11 +36,10 @@ The idea came from wanting something simple on my wall — not a screen that glo
 ### The Display — Waveshare 7.5" e-Paper (800×480, B/W)
 
 <!---------------------------------------------------------------------------->
-<!-- IMAGE: Close-up of the Waveshare 7.5" raw e-ink display panel.          -->
-<!-- Suggested: flat lay on a white surface showing the panel and ribbon      -->
-<!-- cable. Show the ZIF connector end clearly.                               -->
+<!-- TODO PHOTO: display.jpg                                                  -->
+<!-- Close-up flat lay of the raw e-ink panel on a white surface.            -->
+<!-- Show the ribbon cable and ZIF connector end clearly.                    -->
 <!---------------------------------------------------------------------------->
-![Waveshare 7.5" e-ink display](docs/images/display.jpg)
 
 I chose the **Waveshare 7.5 inch raw B/W e-ink panel** for a few reasons. At 800×480 pixels it is big enough to show a full week view with readable text, but not so large that it dominates a wall. I went with black and white only — not the red/yellow color version — because the B/W panel refreshes much faster and has better contrast for text. Color e-ink panels can take 30+ seconds to refresh, which felt too slow even for a calendar.
 
@@ -59,11 +57,10 @@ The "raw panel" version has no driver board built in, just the display glass and
 ### The Brains — Waveshare Universal e-Paper Driver Board (ESP32)
 
 <!---------------------------------------------------------------------------->
-<!-- IMAGE: The Waveshare ESP32 driver board on its own, showing the ZIF     -->
-<!-- connector, ESP32 chip, and WiFi antenna clearly.                         -->
-<!-- Suggested: flat lay, good lighting, show both sides if interesting.      -->
+<!-- TODO PHOTO: driver_board.jpg                                             -->
+<!-- Flat lay of the ESP32 driver board showing the ZIF connector,           -->
+<!-- ESP32 chip, and WiFi antenna. Show both sides if interesting.           -->
 <!---------------------------------------------------------------------------->
-![Waveshare ESP32 Driver Board](docs/images/driver_board.jpg)
 
 The **Waveshare Universal e-Paper Driver Board** is the core of CALINK. It does three jobs at once: it drives the e-ink display via a built-in ZIF/FPC latch connector, it runs the ESP32 microcontroller that handles all the code, and it provides WiFi for calendar and weather sync. Connecting the display is as simple as flipping the latch, sliding the ribbon cable in, and pressing the latch back down — no soldering required for the display connection at all.
 
@@ -81,15 +78,14 @@ I chose this board over wiring up a bare ESP32 because it eliminates a huge amou
 ### Power — LiPo Battery + TP4056 Charger
 
 <!---------------------------------------------------------------------------->
-<!-- IMAGE: The LiPo battery and TP4056 module side by side.                 -->
-<!-- Suggested: flat lay showing both components with the JST connector       -->
-<!-- visible on the battery and the USB-C port on the TP4056.                -->
+<!-- TODO PHOTO: power.jpg                                                    -->
+<!-- LiPo battery and TP4056 module side by side, flat lay.                  -->
+<!-- Show JST connector on battery and USB-C port on TP4056.                 -->
 <!---------------------------------------------------------------------------->
-![LiPo battery and TP4056 charger](docs/images/power.jpg)
 
 For power I used a **1100mAh LiPo battery** paired with a **TP4056 USB-C charging module**. The ESP32 deep sleep mode draws almost no power between refreshes, so a 1100mAh cell lasts for weeks at a 1-hour refresh interval.
 
-The TP4056 handles charging safely — it has built-in overcharge and overdischarge protection and charges the battery via USB-C. In the enclosure the USB-C port is accessible from the side so CALINK can be charged without taking it off the wall.
+The TP4056 handles charging safely — it has built-in overcharge and overdischarge protection and charges via USB-C. In the enclosure the USB-C port is accessible from the side so CALINK can be charged without taking it off the wall.
 
 **Wiring:**
 ```
@@ -104,12 +100,10 @@ TP4056 OUT-  →  ESP32 Driver Board GND
 ### Why No Custom PCB?
 
 <!---------------------------------------------------------------------------->
-<!-- IMAGE: All components laid out together showing how they connect —       -->
-<!-- display, driver board, battery, and TP4056.                              -->
-<!-- Suggested: flat lay bird's eye view, slightly spread out so all parts    -->
-<!-- are visible and identifiable.                                            -->
+<!-- TODO PHOTO: components_layout.jpg                                        -->
+<!-- All 4 components laid out together in a flat lay bird's eye view.       -->
+<!-- Spread slightly so all parts are visible and identifiable.              -->
 <!---------------------------------------------------------------------------->
-![All components laid out](docs/images/components_layout.jpg)
 
 Early in the project I planned to design a custom PCB to tie everything together. After mapping out what the PCB would actually do, I realized it would just be a power distribution board with four connectors — not meaningfully adding to the project. The connections between components are already clean: the display ribbon plugs directly into the driver board ZIF connector, the battery and TP4056 connect with JST plugs, and the whole thing fits neatly inside the 3D printed enclosure.
 
@@ -120,25 +114,18 @@ Skipping the PCB kept the project simpler, cheaper, and easier to assemble. The 
 ### The Enclosure — 3D Printed
 
 <!---------------------------------------------------------------------------->
-<!-- IMAGE: The 3D printed enclosure before assembly — show front, back,     -->
-<!-- and side in three separate photos.                                       -->
-<!-- Suggested:                                                               -->
-<!--   enclosure_front.jpg — front face showing display cutout               -->
-<!--   enclosure_back.jpg  — back showing wall mount keyhole slots           -->
-<!--   enclosure_side.jpg  — side showing USB-C cutout                       -->
+<!-- TODO PHOTO: enclosure_front.jpg — front face showing display cutout     -->
+<!-- TODO PHOTO: enclosure_back.jpg  — back showing wall mount keyhole slots -->
+<!-- TODO PHOTO: enclosure_side.jpg  — side showing USB-C cutout             -->
 <!---------------------------------------------------------------------------->
-![3D Printed Enclosure Front](docs/images/enclosure_front.jpg)
-![Enclosure Back with Wall Mount](docs/images/enclosure_back.jpg)
-![Enclosure Side Profile](docs/images/enclosure_side.jpg)
+
+<!---------------------------------------------------------------------------->
+<!-- TODO IMAGE: cad_render.jpg                                               -->
+<!-- Screenshot or render from CAD software showing internal layout.         -->
+<!-- Add this once enclosure is designed — this is the first image to add.   -->
+<!---------------------------------------------------------------------------->
 
 The enclosure was designed in CAD and 3D printed. The goals were: as thin as possible, flush to the wall, and the USB-C charging port accessible from the side without removing the device. The display sits in a recessed front frame so it appears flush with the face, and the whole unit hangs on two wall anchors from keyhole slots on the back.
-
-<!---------------------------------------------------------------------------->
-<!-- IMAGE: CAD screenshot or render showing the internal layout with        -->
-<!-- components placed inside.                                                -->
-<!-- Suggested: Fusion 360 / OnShape render or screenshot from the CAD tool  -->
-<!---------------------------------------------------------------------------->
-![CAD Design](docs/images/cad_render.jpg)
 
 **Design decisions:**
 - Recessed display frame so the screen sits flush with the front face
@@ -152,18 +139,13 @@ The enclosure was designed in CAD and 3D printed. The goals were: as thin as pos
 ## Assembly
 
 <!---------------------------------------------------------------------------->
-<!-- IMAGES: Step by step assembly — aim for 5 photos:                       -->
-<!--   assembly_1.jpg — components next to open enclosure                    -->
-<!--   assembly_2.jpg — driver board seated in enclosure                     -->
-<!--   assembly_3.jpg — display ribbon cable being inserted into ZIF latch   -->
-<!--   assembly_4.jpg — battery and TP4056 wired and tucked in               -->
-<!--   assembly_5.jpg — finished unit, back panel on                         -->
+<!-- TODO PHOTOS: assembly_1.jpg through assembly_5.jpg                      -->
+<!--   1 — components next to open enclosure                                 -->
+<!--   2 — driver board seated in enclosure                                  -->
+<!--   3 — display ribbon cable being inserted into ZIF latch                -->
+<!--   4 — battery and TP4056 wired and tucked in                            -->
+<!--   5 — finished unit with back panel on                                  -->
 <!---------------------------------------------------------------------------->
-![Assembly Step 1](docs/images/assembly_1.jpg)
-![Assembly Step 2](docs/images/assembly_2.jpg)
-![Assembly Step 3](docs/images/assembly_3.jpg)
-![Assembly Step 4](docs/images/assembly_4.jpg)
-![Assembly Step 5](docs/images/assembly_5.jpg)
 
 1. Seat the ESP32 driver board in the enclosure
 2. Flip the ZIF latch on the driver board, slide the display ribbon cable in, press latch down
@@ -283,14 +265,9 @@ CALINK cycles through three views automatically on each refresh:
 | **Agenda** | All upcoming events in chronological order |
 
 <!---------------------------------------------------------------------------->
-<!-- IMAGES: One photo of the display showing each view.                     -->
-<!--   view_week.jpg   — week grid view                                      -->
-<!--   view_day.jpg    — day view with today's events                        -->
-<!--   view_agenda.jpg — agenda list view                                    -->
+<!-- TODO PHOTOS: view_week.jpg, view_day.jpg, view_agenda.jpg               -->
+<!-- Photos of the actual display showing each view once built.              -->
 <!---------------------------------------------------------------------------->
-![Week View](docs/images/view_week.jpg)
-![Day View](docs/images/view_day.jpg)
-![Agenda View](docs/images/view_agenda.jpg)
 
 ---
 
