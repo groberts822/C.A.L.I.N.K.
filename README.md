@@ -265,7 +265,7 @@ CALINK cycles through three views automatically on each refresh:
 
 | Part | Distributor | Qty |
 |---|---|---|
-| Waveshare 7.5" e-Paper 800x480 B/W raw panel | Waveshare / Amazon | 1 |
+| [Waveshare 7.5" e-Paper 800x480 B/W raw panel](https://www.waveshare.com/product/7.5inch-e-paper.htm) | Waveshare / Amazon | 1 |
 | Waveshare Universal e-Paper Driver Board (ESP32) | Waveshare / Amazon | 1 |
 | MakerFocus 1100mAh LiPo JST 1.25 (4-pack) | Amazon | 1 pack |
 | TP4056 USB-C LiPo Charger Module | Amazon | 1 |
