@@ -1,10 +1,9 @@
 # C.A.L.I.N.K.
-# CALINK
 ### Calendar Ambient Low-power Ink Network Keeper
 
 > A low-power e-ink wall calendar that keeps your schedule visible all day — glanceable, distraction-free, and always up to date.
 
-![CALINK Banner](docs/banner.png)
+![CALINK Banner](Image Here)
 
 ---
 
