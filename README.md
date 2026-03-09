@@ -69,9 +69,9 @@ I chose this board over wiring up a bare ESP32 because it eliminates a huge amou
 
 ### Power — LiPo Battery + TP4056 Charger
 
-<img width="1090" height="757" alt="image" src="https://github.com/user-attachments/assets/0a21bb1e-35bc-46fb-9c36-49e570668dbc" />
+<img width="458" height="344" alt="image" src="https://github.com/user-attachments/assets/6c534fe2-5d70-4042-8fdf-f7f046002b33" />
 
-<img width="461" height="407" alt="image" src="https://github.com/user-attachments/assets/ff0bb392-3910-409a-8488-106ebb381610" />
+<img width="457" height="369" alt="image" src="https://github.com/user-attachments/assets/86c7fd98-84c6-479d-beca-c4d2f64e56fe" />
 
 For power I used a **1100mAh LiPo battery** paired with a **TP4056 USB-C charging module**. The ESP32 deep sleep mode draws almost no power between refreshes, so a 1100mAh cell lasts for weeks at a 1-hour refresh interval.
 
