@@ -89,7 +89,7 @@ TP4056 OUT-  →  ESP32 Driver Board GND
 
 ### Why No Custom PCB?
 
-<img width="889" height="622" alt="image" src="https://github.com/user-attachments/assets/21a57532-5712-4363-aec5-937f2dfdce1b" />
+<img width="839" height="614" alt="image" src="https://github.com/user-attachments/assets/5e68f6f6-e9f7-4519-ba34-3c5fb1c33673" />
 
 Early in the project I planned to design a custom PCB to tie everything together. After mapping out what the PCB would actually do, I realized it would just be a power distribution board with four connectors — not meaningfully adding to the project. The connections between components are already clean: the display ribbon plugs directly into the driver board ZIF connector, the battery and TP4056 connect with JST plugs, and the whole thing fits neatly inside the 3D printed enclosure.
 
@@ -105,10 +105,6 @@ Skipping the PCB kept the project simpler, cheaper, and easier to assemble. The 
 
 <img width="613" height="91" alt="image" src="https://github.com/user-attachments/assets/7bc8a3e3-9fda-4cac-a896-a88c183f8c86" />
 
-<img width="1129" height="662" alt="image" src="https://github.com/user-attachments/assets/598ea644-6d53-462b-90d6-c9ad379b1020" />
-
-<img width="839" height="614" alt="image" src="https://github.com/user-attachments/assets/5e68f6f6-e9f7-4519-ba34-3c5fb1c33673" />
-
 The enclosure was designed in CAD and 3D printed. The goals were: as thin as possible, flush to the wall, and the USB-C charging port accessible from the side without removing the device. The display sits in a recessed front frame so it appears flush with the face, and the whole unit hangs on two wall anchors from keyhole slots on the back.
 
 **Design decisions:**
@@ -122,14 +118,9 @@ The enclosure was designed in CAD and 3D printed. The goals were: as thin as pos
 
 ## Assembly
 
-<!---------------------------------------------------------------------------->
-<!-- TODO PHOTOS: assembly_1.jpg through assembly_5.jpg                      -->
-<!--   1 — components next to open enclosure                                 -->
-<!--   2 — driver board seated in enclosure                                  -->
-<!--   3 — display ribbon cable being inserted into ZIF latch                -->
-<!--   4 — battery and TP4056 wired and tucked in                            -->
-<!--   5 — finished unit with back panel on                                  -->
-<!---------------------------------------------------------------------------->
+<img width="1129" height="662" alt="image" src="https://github.com/user-attachments/assets/598ea644-6d53-462b-90d6-c9ad379b1020" />
+
+
 
 1. Seat the ESP32 driver board in the enclosure
 2. Flip the ZIF latch on the driver board, slide the display ribbon cable in, press latch down
