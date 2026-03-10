@@ -28,6 +28,10 @@ The idea came from wanting a calm, always-on display that tells me what's happen
 - Deep sleep — ESP32 sleeps between refreshes, battery lasts weeks
 - NTP time sync — always accurate, no RTC module needed
 - 3D printed enclosure — custom designed to hang flush on the wall
+- Custom boot screen — CALINK logo displays on startup
+- Focus mode — unique layout when you have nothing scheduled today
+- Custom pixel art weather icons — hand drawn for e-ink
+- Custom display layout — fully original typography and grid design
 
 ---
 
@@ -249,11 +253,18 @@ CALINK cycles through three views automatically on each refresh:
 | **Week** | Full 7-day grid with events under each day |
 | **Day** | Today's events listed in detail with times |
 | **Agenda** | All upcoming events in chronological order |
+| **Focus** | Shown when no events today — large clock, quote, and weather |
 
 <!---------------------------------------------------------------------------->
 <!-- TODO PHOTOS: view_week.jpg, view_day.jpg, view_agenda.jpg               -->
 <!-- Photos of the actual display showing each view once built.              -->
 <!---------------------------------------------------------------------------->
+
+---
+
+## Design
+
+CALINK has a fully custom display layout — not a default font or generic grid. The typography, spacing, and visual hierarchy were designed specifically for e-ink rendering. Weather conditions are shown as hand-drawn pixel art icons rather than text. On startup, a custom boot screen displays the CALINK logo before the calendar loads.
 
 ---
 
