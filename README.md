@@ -122,7 +122,9 @@ The enclosure was designed in CAD and 3D printed. The goals were: as thin as pos
 
 Below is a video scrolling through and showing the proper connections the model makes. 
 
+'''
 https://youtu.be/8ukgVpSq_vM
+'''
 
 1. Seat the ESP32 driver board in the enclosure
 2. Flip the ZIF latch on the driver board, slide the display ribbon cable in, press latch down
