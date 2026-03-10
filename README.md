@@ -89,11 +89,7 @@ TP4056 OUT-  →  ESP32 Driver Board GND
 
 ### Why No Custom PCB?
 
-<!---------------------------------------------------------------------------->
-<!-- TODO PHOTO: components_layout.jpg                                        -->
-<!-- All 4 components laid out together in a flat lay bird's eye view.       -->
-<!-- Spread slightly so all parts are visible and identifiable.              -->
-<!---------------------------------------------------------------------------->
+<img width="889" height="622" alt="image" src="https://github.com/user-attachments/assets/21a57532-5712-4363-aec5-937f2dfdce1b" />
 
 Early in the project I planned to design a custom PCB to tie everything together. After mapping out what the PCB would actually do, I realized it would just be a power distribution board with four connectors — not meaningfully adding to the project. The connections between components are already clean: the display ribbon plugs directly into the driver board ZIF connector, the battery and TP4056 connect with JST plugs, and the whole thing fits neatly inside the 3D printed enclosure.
 
@@ -103,17 +99,15 @@ Skipping the PCB kept the project simpler, cheaper, and easier to assemble. The 
 
 ### The Enclosure — 3D Printed
 
-<!---------------------------------------------------------------------------->
-<!-- TODO PHOTO: enclosure_front.jpg — front face showing display cutout     -->
-<!-- TODO PHOTO: enclosure_back.jpg  — back showing wall mount keyhole slots -->
-<!-- TODO PHOTO: enclosure_side.jpg  — side showing USB-C cutout             -->
-<!---------------------------------------------------------------------------->
+<img width="808" height="553" alt="image" src="https://github.com/user-attachments/assets/64bc9b8c-cb33-49e3-852f-a47eff887f8d" />
 
-<!---------------------------------------------------------------------------->
-<!-- TODO IMAGE: cad_render.jpg                                               -->
-<!-- Screenshot or render from CAD software showing internal layout.         -->
-<!-- Add this once enclosure is designed — this is the first image to add.   -->
-<!---------------------------------------------------------------------------->
+<img width="612" height="438" alt="image" src="https://github.com/user-attachments/assets/2a958ed1-56d6-4414-ab90-03f40801991d" />
+
+<img width="613" height="91" alt="image" src="https://github.com/user-attachments/assets/7bc8a3e3-9fda-4cac-a896-a88c183f8c86" />
+
+<img width="1129" height="662" alt="image" src="https://github.com/user-attachments/assets/598ea644-6d53-462b-90d6-c9ad379b1020" />
+
+<img width="839" height="614" alt="image" src="https://github.com/user-attachments/assets/5e68f6f6-e9f7-4519-ba34-3c5fb1c33673" />
 
 The enclosure was designed in CAD and 3D printed. The goals were: as thin as possible, flush to the wall, and the USB-C charging port accessible from the side without removing the device. The display sits in a recessed front frame so it appears flush with the face, and the whole unit hangs on two wall anchors from keyhole slots on the back.
 
