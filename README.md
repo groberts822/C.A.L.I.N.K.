@@ -13,9 +13,9 @@
 
 ## What is CALINK?
 
-CALINK is a wall-mounted e-ink calendar display powered by an ESP32. It syncs with your Google Calendar over WiFi, shows the weather, and displays a daily quote — all on a 7.5 inch black and white e-ink screen that barely uses any battery. Because e-ink only draws power when the image changes, CALINK can run for weeks on a single charge while always showing your schedule.
+CALINK is a wall-mounted e-ink calendar display powered by an ESP32. It syncs with your Google Calendar over WiFi, shows the weather, and displays a daily quote. This all takes place on a 7.5 inch black and white e-ink screen that uses a little amount of battery. Because e-ink only draws power when the image changes, CALINK can run for weeks on a single charge while always showing stuff.
 
-The idea came from wanting something simple on my wall — not a screen that glows, not a phone I have to pick up, just a calm always-visible display that tells me what's happening today and this week without asking for my attention. I wanted it to feel more like a piece of paper than a gadget.
+The idea came from wanting a calm, always-on display that tells me what's happening today and this week without asking for my attention. I wanted it to feel more like the kindles do rather than a monitor.
 
 ---
 
@@ -37,9 +37,9 @@ The idea came from wanting something simple on my wall — not a screen that glo
 
 <img width="431" height="353" alt="image" src="https://github.com/user-attachments/assets/052fd2c4-ca41-4cf7-a37e-5ef4aa8200c5" />
 
-I chose the **Waveshare 7.5 inch raw B/W e-ink panel** for a few reasons. At 800×480 pixels it is big enough to show a full week view with readable text, but not so large that it dominates a wall. I went with black and white only — not the red/yellow color version — because the B/W panel refreshes much faster and has better contrast for text. Color e-ink panels can take 30+ seconds to refresh, which felt too slow even for a calendar.
+I chose the **Waveshare 7.5 inch raw B/W e-ink panel** for a few reasons. At 800×480 pixels it is big enough to show a full week view with readable text, but not so large that it covers a wall. I went with black and white only (there's ones with yellow and red too) because the B/W panel refreshes much faster and has better contrast for text. Color e-ink panels can take 30+ seconds to refresh, which felt too slow even for a calendar.
 
-The "raw panel" version has no driver board built in, just the display glass and a flat ribbon cable. This keeps it thin and light, and lets the driver board handle all the logic.
+The "raw panel" version has no driver board built in, just the display glass and a flat ribbon cable. This keeps it thin and light, and lets the esp32 driver board handle it all.
 
 **Specs:**
 - Resolution: 800 x 480
@@ -54,9 +54,9 @@ The "raw panel" version has no driver board built in, just the display glass and
 
 <img width="381" height="316" alt="image" src="https://github.com/user-attachments/assets/b87a273d-5673-4f94-8196-383726db96b4" />
 
-The **Waveshare Universal e-Paper Driver Board** is the core of CALINK. It does three jobs at once: it drives the e-ink display via a built-in ZIF/FPC latch connector, it runs the ESP32 microcontroller that handles all the code, and it provides WiFi for calendar and weather sync. Connecting the display is as simple as flipping the latch, sliding the ribbon cable in, and pressing the latch back down — no soldering required for the display connection at all.
+The **Waveshare Universal e-Paper Driver Board** is the microcontroller for controlling CALINK. It has 3 jobs: it drives the e-ink display via a built-in ZIF/FPC latch connector, it runs the ESP32 microcontroller that handles all the code, and it provides WiFi for calendar and weather sync. Connecting the display is as simple as flipping the latch, sliding the ribbon cable in, and pressing the latch back down — no soldering required.
 
-I chose this board over wiring up a bare ESP32 because it eliminates a huge amount of complexity. The e-ink display requires specific driver circuitry and precise SPI timing — Waveshare has already solved all of that. Using their driver board meant I could focus on the software and the enclosure instead of debugging display signals.
+I chose this board over wiring up a bare ESP32 because it eliminates a huge amount of complexity. The e-ink display requires specific driver circuitry and precise SPI timing, and Waveshare has already solved all of that for us. Using their driver board meant I could focus on the software and the enclosure instead of spending my time debugging.
 
 **Specs:**
 - MCU: ESP32 dual core 240MHz
@@ -75,14 +75,15 @@ I chose this board over wiring up a bare ESP32 because it eliminates a huge amou
 
 For power I used a **1100mAh LiPo battery** paired with a **TP4056 USB-C charging module**. The ESP32 deep sleep mode draws almost no power between refreshes, so a 1100mAh cell lasts for weeks at a 1-hour refresh interval.
 
-The TP4056 handles charging safely — it has built-in overcharge and overdischarge protection and charges via USB-C. In the enclosure the USB-C port is accessible from the side so CALINK can be charged without taking it off the wall.
+The TP4056 handles charging safely — it has built-in overcharge and overdischarge protection and charges via USB-C. In the enclosure the USB-C port is accessible from the bottom so CALINK can be charged without taking it off the wall.
 
 **Wiring:**
 ```
 LiPo B+      →  TP4056 B+
 LiPo B-      →  TP4056 B-
-TP4056 OUT+  →  ESP32 Driver Board 5V pin
+TP4056 OUT+  →  Slide Switch (Pin 1)
 TP4056 OUT-  →  ESP32 Driver Board GND
+Slide Switch (Pin 2)  →  ESP32 Driver Board 5V pin
 ```
 
 ---
@@ -93,7 +94,7 @@ TP4056 OUT-  →  ESP32 Driver Board GND
 
 Early in the project I planned to design a custom PCB to tie everything together. After mapping out what the PCB would actually do, I realized it would just be a power distribution board with four connectors — not meaningfully adding to the project. The connections between components are already clean: the display ribbon plugs directly into the driver board ZIF connector, the battery and TP4056 connect with JST plugs, and the whole thing fits neatly inside the 3D printed enclosure.
 
-Skipping the PCB kept the project simpler, cheaper, and easier to assemble. The real complexity lives where it matters — in the software and the enclosure design.
+Skipping the PCB kept the project simpler, cheaper, and just easier.
 
 ---
 
@@ -105,7 +106,7 @@ Skipping the PCB kept the project simpler, cheaper, and easier to assemble. The 
 
 <img width="613" height="91" alt="image" src="https://github.com/user-attachments/assets/7bc8a3e3-9fda-4cac-a896-a88c183f8c86" />
 
-The enclosure was designed in CAD and 3D printed. The goals were: as thin as possible, flush to the wall, and the USB-C charging port accessible from the side without removing the device. The display sits in a recessed front frame so it appears flush with the face, and the whole unit hangs on two wall anchors from keyhole slots on the back.
+The enclosure was designed in CAD and 3D printed. The goals were to keep it as thin as possible, flush to the wall, and the USB-C charging port accessible from the side without removing the device. The display sits in a recessed front frame so it appears flush with the face, and the whole unit hangs on two wall anchors from keyhole slots on the back.
 
 **Design decisions:**
 - Recessed display frame so the screen sits flush with the front face
