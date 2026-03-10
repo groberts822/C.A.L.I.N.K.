@@ -96,6 +96,10 @@ Early in the project I planned to design a custom PCB to tie everything together
 
 Skipping the PCB kept the project simpler, cheaper, and just easier.
 
+However, below is the wiring diagram for our project, it is quite simple: 
+
+<img width="1079" height="610" alt="image" src="https://github.com/user-attachments/assets/16fafd9a-6ece-44f4-87b1-bde0ce97f993" />
+
 ---
 
 ### The Enclosure — 3D Printed
