@@ -264,7 +264,7 @@ CALINK cycles through three views automatically on each refresh:
 
 ## Design
 
-CALINK has a fully custom display layout — not a default font or generic grid. The typography, spacing, and visual hierarchy were designed specifically for e-ink rendering. Weather conditions are shown as hand-drawn pixel art icons rather than text. On startup, a custom boot screen displays the CALINK logo before the calendar loads.
+CALINK has a fully custom display layout, it does not rely on a default font or generic grid. The text and visuals were designed specifically for e-ink rendering, and the weather conditions are shown as hand-drawn pixel art icons rather than text. When CALINK boots up, a custom boot screen displays the CALINK logo before the calendar loads.
 
 ---
 
