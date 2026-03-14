@@ -7,10 +7,10 @@
 #include <Fonts/FreeSansBold18pt7b.h>
 #include <time.h>
 
-#define WIFI_SSID         "YOUR_WIFI_SSID"
-#define WIFI_PASSWORD     "YOUR_WIFI_PASSWORD"
+#define WIFI_SSID         "WIFI_NAME"
+#define WIFI_PASSWORD     "WIFI_PASSWORD"
 #define GAS_URL           "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
-#define OWM_API_KEY       "YOUR_OWM_API_KEY"
+#define OWM_API_KEY       "OWM_API_KEY"
 #define OWM_CITY          "New York"
 #define OWM_UNITS         "imperial"
 #define NTP_SERVER        "pool.ntp.org"
