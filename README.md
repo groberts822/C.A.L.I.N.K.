@@ -3,12 +3,6 @@
 
 > A low-power e-ink wall calendar that keeps your schedule visible all day — glanceable, distraction-free, and always up to date.
 
-<!---------------------------------------------------------------------------->
-<!-- TODO PHOTO: hero.jpg                                                     -->
-<!-- Finished CALINK mounted on your wall, display showing week view.        -->
-<!-- Natural lighting, clean background, slightly angled shot.               -->
-<!---------------------------------------------------------------------------->
-
 ---
 
 ## What is CALINK?
@@ -254,11 +248,6 @@ CALINK cycles through three views automatically on each refresh:
 | **Day** | Today's events listed in detail with times |
 | **Agenda** | All upcoming events in chronological order |
 | **Focus** | Shown when no events today — large clock, quote, and weather |
-
-<!---------------------------------------------------------------------------->
-<!-- TODO PHOTOS: view_week.jpg, view_day.jpg, view_agenda.jpg               -->
-<!-- Photos of the actual display showing each view once built.              -->
-<!---------------------------------------------------------------------------->
 
 ---
 
