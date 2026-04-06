@@ -268,7 +268,4 @@ CALINK has a fully custom display layout, it does not rely on a default font or 
 | [SPDT Toggle Switch](https://www.amazon.com/Mini-Micro-Slide-Switch-Breadboard/dp/B0DN69L9SG/ref=sr_1_3?crid=7IVKICQ4B00L&dib=eyJ2IjoiMSJ9.Aq11w6rHf74gIfyFiQM7JuQl5Zz0C4IjKR3X09-iRlz7kf1EOKAUB8Nqu0pHbKGnT6ZmIJLEUETSBr9nFLHxbyoR2JUnzKayTyazMl1kZ1uJPq_6LQwZ--ypQOq0iIqFaboJxkw6aW2JoQTcMZPjg214hCHM3AJ3u_IxhPrlDsyp-NVi9t9yOT5OpYZ7VQXEKNRBhcCn1szhqT5gi9UYty-n_QPmdE4HFvzYsclF2R4.6RNtE9sR8jeNjgh25pBsp7BJeB82qhdi4WJ8DWzGet4&dib_tag=se&keywords=on%2Boff%2Bslide%2Bswitch&qid=1773090265&sprefix=on%2Boff%2Bslideswitch%2Caps%2C140&sr=8-3&th=1) | Amazon | 1 |
 
 ---
-
-## License
-
-MIT — free to use, modify, and share.
+NOT CREATED by AI :(
